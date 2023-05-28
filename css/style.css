@@ -59,6 +59,14 @@ body {
     text-align: center;
 }
 
+#error-message {
+    border-top: 1px solid #fff;
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 #weather-data h2 {
     display: flex;
     justify-content: center;
@@ -78,6 +86,11 @@ body {
     height: 20px;
 }
 
+#description {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
 #description-container {
     display: flex;
     justify-content: center;
@@ -91,7 +104,7 @@ body {
     align-items: center;
 }
 
-#details-container #umidity {
+#details-container #humidity {
     border-right: 1px solid #FFF;
     margin: .6rem;
     padding: .6rem;

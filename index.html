@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima-Tempo</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
     crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <script src="/js/script.js" defer></script>
+    <script src="js/script.js" defer></script>
 </head>
 <body>
     <div class="container">
@@ -22,34 +22,37 @@
             <h3>Obeserve o clima da cidade:</h3>
             <div class="form-input-container">
                 <input type="text" placeholder="Digite o nome da Cidade" id="city-input">
-                <button id="src">
+                <button id="search">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
             </div>
         </div>
-        <div id="weather-data">
+        <div id="weather-data" class="hide">
             <h2>
                 <i class="fa-solid fa-location-dot"></i> 
-                <span id="city">Maceió</span>
-                <img src="https://flagsapi.com/BE/flat/64.png" alt="Bandeira Nacional" id="country">
+                <span id="city"></span>
+                <img src="#" alt="Bandeira Nacional" id="country">
             </h2>
-            <p class="temperature" id="temperature"><span>38</span>&deg;C</p>
+            <p class="temperature" id="temperature"><span></span>&deg;C</p>
             <div id="description-container">
-                <p id="description">Nublado</p>
-                <img src="http://openweathermap.org/img/wn/01d.png" alt="condições climáticas" id="weather-icon">
+                <p id="description"></p>
+                <img src="#" alt="condições climáticas" id="weather-icon">
             </div>
             <div id="details-container">
-                <p id="umidity">
+                <p id="humidity">
                     <i class="fa-solid fa-droplet">
-                        <span>48%</span>
+                        <span></span>
                     </i>
                     <p id="wind">
                         <i class="fa-solid fa-wind">
-                            <span>3km</span>
+                            <span></span>
                         </i>
                     </p>
                 </p>
             </div>
+        </div>
+        <div id="error-message" class="hide">
+            <p>Não foi possível encontrar o clima de uma cidade com este nome.</p>
         </div>
     </div>
 </body>
